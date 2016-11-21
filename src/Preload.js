@@ -1,3 +1,7 @@
+import Game from './Game'
+import Player from './Player'
+import ThrownCard from './ThrownCard'
+
 export default class Preload {
 	preload() {
 		const load = this.load,
@@ -10,6 +14,9 @@ export default class Preload {
 		load.setPreloadSprite(this.bar);
 
 		//PRELOAD RESOURCES HERE
+		Game.preload(load)	
+		Player.preload(load)
+		ThrownCard.preload(load)
 	}
 
 	onLoadComplete() {

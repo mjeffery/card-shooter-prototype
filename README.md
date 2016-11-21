@@ -1,1 +1,1 @@
-# phaser-webpack-boilerplate
+# card-shooter-prototype
